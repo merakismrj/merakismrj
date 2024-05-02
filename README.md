@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown to Meraki</title>
+    <title>AI Countdown</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -22,17 +22,23 @@
         }
         h1 {
             color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
         }
         #countdown {
             font-size: 2rem;
             margin-top: 20px;
             color: #555;
         }
+        .expired {
+            color: #ff5555;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Countdown to Meraki</h1>
+        <h1>AI Evolution Countdown</h1>
         <div id="countdown"></div>
     </div>
 
@@ -62,7 +68,8 @@
             // If the countdown is over, display a message
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
+                document.getElementById("countdown").innerHTML = "AI Evolution is Here!";
+                document.getElementById("countdown").classList.add("expired");
             }
         }, 1000);
     </script>
